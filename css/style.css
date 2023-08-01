@@ -1,0 +1,131 @@
+body {
+  font-size: 30px;
+  color: #fff;
+
+  margin: 0;
+  overflow: hidden;
+}
+
+.bgc-none {
+  background-color: transparent !important;
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #000;
+}
+
+img {
+  object-fit: contain;
+}
+
+img.back {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  z-index: -1;
+}
+
+/*  */
+.title {
+  font-size: 80px;
+  width: 100vw;
+  color: #000;
+  background-color: #f00;
+  margin-bottom: 30px;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area {
+  text-align: center;
+}
+
+.cells {
+  justify-content: center;
+}
+
+/* -------------------------------------------------- */
+/*  */
+/* -------------------------------------------------- */
+.flont {
+  position: fixed;
+  top: 0;
+  left: -50px;
+  width: 150px;
+  height: 100%;
+  background-color: #f00;
+  transform: skew(-5deg);
+}
+
+.sideItems {
+  position: fixed;
+  left: 20px;
+
+  height: 100vh;
+  z-index: 100;
+}
+
+.scrolBars > .scrolBar {
+  width: 10px;
+  height: calc(15vh - 20px);
+  margin: 10px 0;
+
+  background-color: #000;
+
+  transition: all 0.25s;
+}
+
+.scrolBars > .scrolBar.active {
+  background-color: #fff;
+}
+
+/* -------------------------------------------------- */
+/* １：タイトルロゴ */
+/* -------------------------------------------------- */
+.titleLog {
+  width: 50%;
+  min-width: 300px;
+}
+
+/* -------------------------------------------------- */
+/* ２：ストーリー */
+/* -------------------------------------------------- */
+.strong {
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+/* -------------------------------------------------- */
+/* ３：ハンドアウト */
+/* -------------------------------------------------- */
+#sect-3 .cell {
+  background-color: #f00;
+  width: 90%;
+  height: 30vh;
+}
+
+/* -------------------------------------------------- */
+/* ４：キャラクター */
+/* -------------------------------------------------- */
+#sect-4 .cells {
+  display: flex;
+}
+
+#sect-4 .cell {
+  background-color: #f00;
+  width: calc(100vw / 3);
+  height: 60vh;
+}
