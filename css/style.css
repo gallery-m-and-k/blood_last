@@ -41,7 +41,7 @@ img.back {
 }
 
 /*  */
-.title {
+.scene > .title {
   width: 100vw;
   height: 80px;
 
@@ -67,8 +67,25 @@ img.back {
   margin-top: 30px;
 }
 
-.cells {
-  justify-content: center;
+.cell {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  margin: 50px 0;
+}
+
+.cell .title {
+  color: #000;
+  font-weight: bold;
+  background-color: #f00;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ccf;
+  text-decoration: none !important;
 }
 
 /* -------------------------------------------------- */
@@ -127,6 +144,10 @@ img.back {
 /* -------------------------------------------------- */
 /* ３：ハンドアウト */
 /* -------------------------------------------------- */
+.pcs {
+  justify-content: center;
+}
+
 .pc {
   display: flex;
   background-color: rgba(255, 0, 0, 0.5);
@@ -157,12 +178,30 @@ img.back {
 /* -------------------------------------------------- */
 /* ４：キャラクター */
 /* -------------------------------------------------- */
-#sect-4 .cells {
+.npcs {
   display: flex;
+  justify-content: center;
+  margin-left: 10%;
 }
 
-#sect-4 .cell {
+.npc {
   background-color: #f00;
-  width: calc(100vw / 3);
+  width: calc(90% / 3);
   height: 60vh;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: end;
+}
+
+.npc img {
+  height: 100%;
+}
+
+/* -------------------------------------------------- */
+/* ５：製品情報 */
+/* -------------------------------------------------- */
+.notice {
+  font-size: 15px;
+  margin-top: 20px;
 }
